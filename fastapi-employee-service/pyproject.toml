@@ -1,0 +1,36 @@
+[project]
+name = "fastapi-employee-service"
+version = "1.0.0"
+description = "FastAPI Employee Management Service"
+requires-python = ">=3.10"
+dependencies = [
+"fastapi",
+"uvicorn",
+]
+
+[project.optional-dependencies]
+dev = [
+"pytest",
+"httpx",
+"pytest-cov",
+"black",
+"ruff",
+"pre-commit",
+]
+
+[tool.black]
+line-length = 88
+target-version = ["py310"]
+
+[tool.ruff]
+line-length = 88
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "I"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+addopts = "-ra"
+
