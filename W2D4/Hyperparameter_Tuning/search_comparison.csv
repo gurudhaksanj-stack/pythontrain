@@ -1,0 +1,3 @@
+Search Method,Best F1 Score,Execution Time (seconds)
+Grid Search,0.4202486402486403,24.226250886917114
+Randomized Search,0.4202486402486403,45.65055727958679
